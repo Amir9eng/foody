@@ -8,3 +8,6 @@ export { default as Service }
 from "./Service";
 export { default as Reviews }
 from "./Reviews";
+export { default as Chefs }
+from "./Chefs";
+export {default as Footer} from './Footer'

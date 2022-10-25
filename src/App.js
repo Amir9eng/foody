@@ -1,20 +1,33 @@
 import { GlobalStyle } from 'GlobalStyle'
 import { ThemeProvider } from 'styled-components'
-import { lightTheme } from 'styles/theme'
+import { darkTheme, lightTheme } from 'styles/theme'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { Header, Hero, Reviews, Service } from 'components'
+import { Chefs, Footer, Header, Hero, Reviews, Service } from 'components'
 import Menu from 'components/Menu'
+import { useState } from 'react'
 
 function App () {
+  const [theme, setTheme] = useState('light')
+
+  const changeTheme = () => {
+    if (theme === 'light') {
+      setTheme('dark')
+    } else {
+      setTheme('light')
+    }
+  }
+
   return (
     <Router>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
         <GlobalStyle />
-        <Header />
+        <Header setTheme={changeTheme} />
         <Hero />
         <Menu />
         <Service />
         <Reviews />
+        <Chefs />
+        <Footer />
       </ThemeProvider>
     </Router>
   )

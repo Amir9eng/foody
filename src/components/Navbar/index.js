@@ -7,10 +7,10 @@ import {
 } from './NavbarStyle'
 import { BsSun } from 'react-icons/bs'
 
-export default function Navbar () {
+export default function Navbar ({ sideMenu, setTheme }) {
   return (
     <NavbarContainer>
-      <NavList>
+      <NavList sideMenu={sideMenu}>
         <NavItem>
           <NavLink to='/'>Home</NavLink>
         </NavItem>
@@ -27,7 +27,7 @@ export default function Navbar () {
         <NavItem>
           <NavLink to='/'>Chefs</NavLink>
         </NavItem>
-        <NavIcon>
+        <NavIcon onClick={setTheme}>
           <BsSun />
         </NavIcon>
       </NavList>

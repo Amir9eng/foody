@@ -20,7 +20,7 @@ export const NavList = styled.ul `
     min-height: 100vh;
     top: 55px;
     box-shadow: 0 2px 6px hsla(45, 100%, 15%, 0.15);
-    right: -100%;
+    right: ${(props) => (props.sideMenu ? "0" : "-200%")};
   }
 `;
 

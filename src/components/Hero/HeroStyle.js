@@ -32,7 +32,7 @@ export const HeroContainer = styled.div `
 `;
 
 export const HeroTitle = styled.h1 `
-  line-height: 1.5%;
+  line-height: 1.5;
   font-weight: 700;
   margin-bottom: 0.85rem;
   color: ${(props) => props.theme.TitleColor};
@@ -41,6 +41,6 @@ export const HeroTitle = styled.h1 `
 export const HeroDescription = styled.p `
   line-height: 1.8;
   margin-bottom: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
   color: ${(props) => props.theme.TextColor};
 `;
