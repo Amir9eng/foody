@@ -11,7 +11,7 @@ import ServiceChef from 'assets/images/service-chef.png'
 
 export default function Service () {
   return (
-    <Section>
+    <Section id='Services'>
       <Container>
         <ServiceContainer>
           <img src={ServiceChef} alt='serviceChef' />

@@ -24,8 +24,8 @@ function App () {
         <Header setTheme={changeTheme} />
         <Hero />
         <Menu />
-        <Service />
-        <Reviews />
+        <Service id='Services' />
+        <Reviews id='Reviews' />
         <Chefs />
         <Footer />
       </ThemeProvider>

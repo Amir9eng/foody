@@ -4,7 +4,7 @@ import { ChefsData } from './ChefsData'
 
 export default function Chefs () {
   return (
-    <Section id='Chef'>
+    <Section id='Chefs'>
       <Container>
         <SectionTitle>Meet Our Chefs</SectionTitle>
         <ChefsContainer>

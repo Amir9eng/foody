@@ -6,6 +6,7 @@ import {
   NavList
 } from './NavbarStyle'
 import { BsSun } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 export default function Navbar ({ sideMenu, setTheme }) {
   return (
@@ -15,18 +16,20 @@ export default function Navbar ({ sideMenu, setTheme }) {
           <NavLink to='/'>Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/'>Menu</NavLink>
+          <NavLink to='/#Menu'>Menu</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/'>Services</NavLink>
+          <NavLink to='#Services'>Services</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/'>Reviews</NavLink>
+          <NavLink to='#Reviews'>Reviews</NavLink>
         </NavItem>
+        <Link href='/#Chefs'>
+          <NavItem>
+            <NavLink to='/'>Chefs</NavLink>
+          </NavItem>
+        </Link>
 
-        <NavItem>
-          <NavLink to='/'>Chefs</NavLink>
-        </NavItem>
         <NavIcon onClick={setTheme}>
           <BsSun />
         </NavIcon>

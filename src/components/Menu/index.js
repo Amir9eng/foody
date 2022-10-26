@@ -14,7 +14,7 @@ import { MenuData } from './MenuData'
 
 export default function Menu () {
   return (
-    <Section>
+    <Section id='Menu'>
       <Container>
         <MenuTitle>Popular Dishes</MenuTitle>
         <MenuContainer>

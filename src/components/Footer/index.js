@@ -10,7 +10,7 @@ import {
 
 export default function Footer () {
   return (
-    <Section>
+    <Section id='Footer'>
       <Container>
         <FooterContainer>
           <FooterContent>

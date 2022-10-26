@@ -15,7 +15,7 @@ import UserTwo from 'assets/images/user-2.jpg'
 
 export default function Review () {
   return (
-    <Section>
+    <Section id='Reviews'>
       <Container>
         <SectionTitle>What Our Customer Says ?</SectionTitle>
         <ReviewData>
