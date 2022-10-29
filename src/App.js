@@ -23,7 +23,7 @@ function App () {
         <GlobalStyle />
         <Header setTheme={changeTheme} />
         <Hero />
-        <Menu />
+        <Menu id='Menu' />
         <Service id='Services' />
         <Reviews id='Reviews' />
         <Chefs />

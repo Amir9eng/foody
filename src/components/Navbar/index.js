@@ -16,7 +16,8 @@ export default function Navbar ({ sideMenu, setTheme }) {
           <NavLink to='/'>Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to='/#Menu'>Menu</NavLink>
+          {/* <Link href='' > */}
+          <NavLink to='#Menu'>Menu</NavLink>
         </NavItem>
         <NavItem>
           <NavLink to='#Services'>Services</NavLink>
@@ -24,11 +25,11 @@ export default function Navbar ({ sideMenu, setTheme }) {
         <NavItem>
           <NavLink to='#Reviews'>Reviews</NavLink>
         </NavItem>
-        <Link href='/#Chefs'>
-          <NavItem>
-            <NavLink to='/'>Chefs</NavLink>
-          </NavItem>
-        </Link>
+        <NavItem>
+          <NavLink href='#Chefs'>
+            <a href='#Chefs'>Chefs</a>
+          </NavLink>
+        </NavItem>
 
         <NavIcon onClick={setTheme}>
           <BsSun />
