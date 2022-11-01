@@ -12,7 +12,7 @@ export const NavList = styled.ul `
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    row-gap: 5rem;
+    row-gap: 5.1rem;
     padding: 5rem;
     background-color: ${(props) => props.theme.ContainerColor};
     position: fixed;
